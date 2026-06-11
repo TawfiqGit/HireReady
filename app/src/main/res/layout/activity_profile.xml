@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/screenRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_surface"
+    android:orientation="vertical"
+    tools:context=".ProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout style="@style/ScreenBody">
+            <TextView
+                style="@style/AppTitle"
+                android:text="Mon profil" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/bg_avatar"
+                    android:gravity="center"
+                    android:text="CL"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/BodyText"
+                        android:text="Camille Laurent"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        style="@style/MutedText"
+                        android:text="camille.laurent@email.com" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout android:id="@id/personalInfoRow" style="@style/CardRow">
+                <TextView style="@style/BodyText" android:layout_width="0dp" android:layout_weight="1" android:text="Informations personnelles&#10;Camille Laurent" android:textStyle="bold" />
+                <TextView style="@style/MutedText" android:text="›" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/CardRow">
+                <TextView style="@style/BodyText" android:layout_width="0dp" android:layout_weight="1" android:text="Abonnement&#10;Premium" android:textStyle="bold" />
+                <TextView style="@style/MutedText" android:text="›" />
+            </LinearLayout>
+
+            <LinearLayout android:id="@id/myCvsRow" style="@style/CardRow">
+                <TextView style="@style/BodyText" android:layout_width="0dp" android:layout_weight="1" android:text="Mes CV&#10;5 documents" android:textStyle="bold" />
+                <TextView style="@style/MutedText" android:text="›" />
+            </LinearLayout>
+
+            <LinearLayout android:id="@id/settingsRow" style="@style/CardRow">
+                <TextView style="@style/BodyText" android:layout_width="0dp" android:layout_weight="1" android:text="Paramètres&#10;Compte, préférences et sécurité" android:textStyle="bold" />
+                <TextView style="@style/MutedText" android:text="›" />
+            </LinearLayout>
+
+            <LinearLayout android:id="@id/helpRow" style="@style/CardRow">
+                <TextView style="@style/BodyText" android:layout_width="0dp" android:layout_weight="1" android:text="Centre d'aide&#10;FAQ et contact support" android:textStyle="bold" />
+                <TextView style="@style/MutedText" android:text="›" />
+            </LinearLayout>
+
+            <Button
+                android:id="@id/logoutButton"
+                style="@style/AppButtonSecondary"
+                android:layout_marginTop="18dp"
+                android:text="Déconnexion"
+                android:textColor="@color/app_danger" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/include_bottom_nav" />
+</LinearLayout>

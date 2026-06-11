@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/screenRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_surface"
+    android:orientation="vertical"
+    tools:context=".TermsActivity">
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout style="@style/ScreenBody">
+            <TextView android:id="@id/backButton" style="@style/LinkText" android:text="‹ Retour" />
+            <TextView style="@style/AppTitle" android:layout_marginTop="16dp" android:text="Conditions d'utilisation" />
+            <TextView style="@style/AppSubtitle" android:text="Dernière mise à jour : 01/06/2026" />
+            <TextView style="@style/CardRow" android:layout_marginTop="22dp" android:text="1. Introduction        ›" android:textColor="@color/app_ink" android:textStyle="bold" />
+            <TextView style="@style/CardRow" android:text="2. Utilisation du service        ›" android:textColor="@color/app_ink" android:textStyle="bold" />
+            <TextView style="@style/CardRow" android:text="3. Comptes utilisateurs        ›" android:textColor="@color/app_ink" android:textStyle="bold" />
+            <TextView style="@style/CardRow" android:text="4. Abonnements et paiements        ›" android:textColor="@color/app_ink" android:textStyle="bold" />
+            <TextView style="@style/CardRow" android:text="5. Propriété intellectuelle        ›" android:textColor="@color/app_ink" android:textStyle="bold" />
+            <Button android:id="@id/understoodButton" style="@style/AppButtonSecondary" android:layout_marginTop="24dp" android:text="J'ai lu et j'accepte" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

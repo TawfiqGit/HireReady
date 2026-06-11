@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/screenRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_surface"
+    android:orientation="vertical"
+    tools:context=".MyCvsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout style="@style/ScreenBody">
+            <TextView
+                style="@style/AppTitle"
+                android:text="Mes CV" />
+
+            <EditText
+                style="@style/AppField"
+                android:layout_marginTop="18dp"
+                android:hint="Rechercher un CV" />
+
+            <LinearLayout
+                android:id="@id/cvRow1"
+                style="@style/CardRow">
+                <TextView
+                    style="@style/BodyText"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Responsable RH&#10;Modifié le 12/06/2026"
+                    android:textStyle="bold" />
+                <TextView style="@style/MutedText" android:text="›" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/cvRow2"
+                style="@style/CardRow">
+                <TextView
+                    style="@style/BodyText"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="CV Marketing&#10;Modifié le 05/06/2026"
+                    android:textStyle="bold" />
+                <TextView style="@style/MutedText" android:text="›" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/cvRow3"
+                style="@style/CardRow">
+                <TextView
+                    style="@style/BodyText"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="CV Développeur&#10;Modifié le 20/04/2026"
+                    android:textStyle="bold" />
+                <TextView style="@style/MutedText" android:text="›" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/CardRow">
+                <TextView
+                    style="@style/BodyText"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="CV Commercial&#10;Modifié le 15/04/2026"
+                    android:textStyle="bold" />
+                <TextView style="@style/MutedText" android:text="›" />
+            </LinearLayout>
+
+            <Button
+                android:id="@id/createCvButton"
+                style="@style/AppButtonPrimary"
+                android:layout_marginTop="18dp"
+                android:text="+ Créer un nouveau CV" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/include_bottom_nav" />
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/screenRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_surface"
+    android:orientation="vertical"
+    tools:context=".ProjectsActivity">
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout style="@style/ScreenBody">
+            <TextView android:id="@id/backButton" style="@style/LinkText" android:text="‹ Retour" />
+            <TextView style="@style/AppTitle" android:layout_marginTop="16dp" android:text="Projets" />
+            <TextView style="@style/AppSubtitle" android:text="Présentez vos projets clés." />
+
+            <TextView style="@style/CardRow" android:layout_marginTop="20dp" android:text="Mise en place d'un SIRH&#10;Déploiement d'un nouvel outil SIRH pour 500 collaborateurs." android:textColor="@color/app_ink" android:textStyle="bold" />
+            <TextView style="@style/CardRow" android:text="Programme Bien-être&#10;Conception et lancement d'un programme bien-être au travail." android:textColor="@color/app_ink" android:textStyle="bold" />
+
+            <TextView style="@style/LinkText" android:layout_gravity="center_horizontal" android:layout_marginTop="8dp" android:text="+ Ajouter un projet" />
+            <include layout="@layout/include_form_actions" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

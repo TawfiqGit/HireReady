@@ -11,8 +11,8 @@ import androidx.appcompat.app.AppCompatActivity
 
 class SplashActivity : AppCompatActivity() {
     private val handler = Handler(Looper.getMainLooper())
-    private val openMainActivity = Runnable {
-        startActivity(Intent(this, MainActivity::class.java))
+    private val openLoginActivity = Runnable {
+        startActivity(Intent(this, LoginActivity::class.java))
         finish()
     }
 
@@ -23,11 +23,11 @@ class SplashActivity : AppCompatActivity() {
             navigationBarStyle = SystemBarStyle.dark(Color.TRANSPARENT)
         )
         setContentView(R.layout.activity_splash)
-        handler.postDelayed(openMainActivity, SPLASH_DURATION_MS)
+        handler.postDelayed(openLoginActivity, SPLASH_DURATION_MS)
     }
 
     override fun onDestroy() {
-        handler.removeCallbacks(openMainActivity)
+        handler.removeCallbacks(openLoginActivity)
         super.onDestroy()
     }
 

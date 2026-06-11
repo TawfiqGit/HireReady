@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/screenRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_surface"
+    android:orientation="vertical"
+    tools:context=".FaqActivity">
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout style="@style/ScreenBody">
+            <TextView android:id="@id/backButton" style="@style/LinkText" android:text="‹ Retour" />
+            <TextView style="@style/AppTitle" android:layout_marginTop="16dp" android:text="Questions fréquentes" />
+            <TextView style="@style/CardRow" android:layout_marginTop="22dp" android:text="Comment créer un CV ?        ›" android:textColor="@color/app_ink" android:textStyle="bold" />
+            <TextView style="@style/CardRow" android:text="Puis-je importer mon ancien CV ?        ›" android:textColor="@color/app_ink" android:textStyle="bold" />
+            <TextView style="@style/CardRow" android:text="Comment supprimer mon compte ?        ›" android:textColor="@color/app_ink" android:textStyle="bold" />
+            <TextView style="@style/CardRow" android:text="Mon CV est-il confidentiel ?        ›" android:textColor="@color/app_ink" android:textStyle="bold" />
+            <TextView style="@style/CardRow" android:text="Quels formats d'export sont disponibles ?        ›" android:textColor="@color/app_ink" android:textStyle="bold" />
+            <TextView style="@style/MutedText" android:layout_gravity="center_horizontal" android:layout_marginTop="24dp" android:text="Vous ne trouvez pas votre réponse ?" />
+            <TextView android:id="@id/contactLink" style="@style/LinkText" android:layout_gravity="center_horizontal" android:layout_marginTop="8dp" android:text="Contactez-nous" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

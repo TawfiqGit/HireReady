@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/screenRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_surface"
+    android:orientation="vertical"
+    tools:context=".LanguagesActivity">
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout style="@style/ScreenBody">
+            <TextView android:id="@id/backButton" style="@style/LinkText" android:text="‹ Retour" />
+            <TextView style="@style/AppTitle" android:layout_marginTop="16dp" android:text="Langues" />
+            <TextView style="@style/AppSubtitle" android:text="Indiquez vos langues et votre niveau." />
+
+            <TextView style="@style/CardRow" android:layout_marginTop="20dp" android:text="Français                                      Langue maternelle" android:textColor="@color/app_ink" android:textStyle="bold" />
+            <TextView style="@style/CardRow" android:text="Anglais                                             Courant (B2)" android:textColor="@color/app_ink" android:textStyle="bold" />
+            <TextView style="@style/CardRow" android:text="Espagnol                                      Intermédiaire (B1)" android:textColor="@color/app_ink" android:textStyle="bold" />
+
+            <TextView style="@style/LinkText" android:layout_gravity="center_horizontal" android:layout_marginTop="8dp" android:text="+ Ajouter une langue" />
+            <include layout="@layout/include_form_actions" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

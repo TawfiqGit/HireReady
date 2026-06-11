@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/screenRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_surface"
+    android:orientation="vertical"
+    tools:context=".CreateCvActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout style="@style/ScreenBody">
+            <TextView
+                android:id="@id/backButton"
+                style="@style/LinkText"
+                android:text="‹ Retour" />
+
+            <TextView
+                style="@style/AppTitle"
+                android:layout_marginTop="18dp"
+                android:text="Comment voulez-vous commencer ?" />
+
+            <LinearLayout
+                android:id="@id/blankCvOption"
+                style="@style/CardRow"
+                android:layout_marginTop="22dp">
+                <TextView
+                    style="@style/BodyText"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="À partir de zéro&#10;Créez votre CV étape par étape"
+                    android:textStyle="bold" />
+                <TextView style="@style/MutedText" android:text="›" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/templateOption"
+                style="@style/CardRow">
+                <TextView
+                    style="@style/BodyText"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Choisir un modèle&#10;Sélectionnez un modèle de CV"
+                    android:textStyle="bold" />
+                <TextView style="@style/MutedText" android:text="›" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/importCvOption"
+                style="@style/CardRow">
+                <TextView
+                    style="@style/BodyText"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Importer un CV&#10;Nous l'analyserons et l'améliorerons"
+                    android:textStyle="bold" />
+                <TextView style="@style/MutedText" android:text="›" />
+            </LinearLayout>
+
+            <Button
+                android:id="@id/cancelButton"
+                style="@style/AppButtonSecondary"
+                android:layout_marginTop="24dp"
+                android:text="Annuler" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

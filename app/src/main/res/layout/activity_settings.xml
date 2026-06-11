@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/screenRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_surface"
+    android:orientation="vertical"
+    tools:context=".SettingsActivity">
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout style="@style/ScreenBody">
+            <TextView android:id="@id/backButton" style="@style/LinkText" android:text="‹ Retour" />
+            <TextView style="@style/AppTitle" android:layout_marginTop="16dp" android:text="Paramètres" />
+
+            <TextView style="@style/SectionTitle" android:text="Compte" />
+            <LinearLayout android:id="@id/passwordRow" style="@style/CardRow"><TextView style="@style/BodyText" android:layout_width="0dp" android:layout_weight="1" android:text="Modifier le mot de passe" android:textStyle="bold" /><TextView style="@style/MutedText" android:text="›" /></LinearLayout>
+            <TextView style="@style/CardRow" android:text="Email&#10;camille.laurent@email.com" android:textColor="@color/app_ink" android:textStyle="bold" />
+            <TextView style="@style/CardRow" android:text="Langue&#10;Français" android:textColor="@color/app_ink" android:textStyle="bold" />
+
+            <TextView style="@style/SectionTitle" android:text="Préférences" />
+            <TextView style="@style/CardRow" android:text="Thème&#10;Clair" android:textColor="@color/app_ink" android:textStyle="bold" />
+            <LinearLayout android:id="@id/notificationsRow" style="@style/CardRow"><TextView style="@style/BodyText" android:layout_width="0dp" android:layout_weight="1" android:text="Notifications" android:textStyle="bold" /><TextView style="@style/MutedText" android:text="›" /></LinearLayout>
+            <LinearLayout android:id="@id/confidentialityRow" style="@style/CardRow"><TextView style="@style/BodyText" android:layout_width="0dp" android:layout_weight="1" android:text="Confidentialité&#10;Données, cookies et politique" android:textStyle="bold" /><TextView style="@style/MutedText" android:text="›" /></LinearLayout>
+
+            <TextView style="@style/SectionTitle" android:text="Autres" />
+            <LinearLayout android:id="@id/termsRow" style="@style/CardRow"><TextView style="@style/BodyText" android:layout_width="0dp" android:layout_weight="1" android:text="Conditions d'utilisation" android:textStyle="bold" /><TextView style="@style/MutedText" android:text="›" /></LinearLayout>
+            <LinearLayout android:id="@id/deleteAccountRow" style="@style/CardRow"><TextView style="@style/BodyText" android:layout_width="0dp" android:layout_weight="1" android:text="Supprimer mon compte" android:textColor="@color/app_danger" android:textStyle="bold" /><TextView style="@style/MutedText" android:text="›" /></LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

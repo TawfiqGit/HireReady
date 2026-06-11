@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/screenRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_surface"
+    android:orientation="vertical"
+    tools:context=".ContactSupportActivity">
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout style="@style/ScreenBody">
+            <TextView android:id="@id/backButton" style="@style/LinkText" android:text="‹ Retour" />
+            <TextView style="@style/AppTitle" android:layout_marginTop="16dp" android:text="Contactez-nous" />
+            <TextView style="@style/AppSubtitle" android:text="Notre équipe est là pour vous aider." />
+            <TextView style="@style/LabelText" android:layout_marginTop="22dp" android:text="Sujet" />
+            <EditText style="@style/AppField" android:hint="Sélectionnez un sujet" />
+            <TextView style="@style/LabelText" android:text="Votre message" />
+            <EditText style="@style/AppField" android:layout_height="150dp" android:gravity="top" android:hint="Décrivez votre problème..." android:inputType="textMultiLine" android:singleLine="false" />
+            <TextView style="@style/CardRow" android:text="Joindre un fichier (optionnel)" android:textColor="@color/app_ink" android:textStyle="bold" />
+            <Button android:id="@id/sendButton" style="@style/AppButtonPrimary" android:text="Envoyer" />
+            <TextView style="@style/MutedText" android:layout_gravity="center_horizontal" android:text="Réponse sous 24h ouvrées" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

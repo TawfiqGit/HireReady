@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/screenRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_surface"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            style="@style/ScreenBody"
+            android:gravity="center_vertical">
+
+            <TextView
+                style="@style/AppTitle"
+                android:text="Bienvenue !" />
+
+            <TextView
+                style="@style/AppSubtitle"
+                android:text="Connectez-vous à votre compte" />
+
+            <TextView
+                style="@style/CardRow"
+                android:layout_marginTop="22dp"
+                android:gravity="center"
+                android:text="G   Continuer avec Google"
+                android:textColor="@color/app_ink"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/CardRow"
+                android:gravity="center"
+                android:text="A   Continuer avec Apple"
+                android:textColor="@color/app_ink"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/MutedText"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:text="ou" />
+
+            <TextView
+                style="@style/LabelText"
+                android:text="Email" />
+
+            <EditText
+                style="@style/AppField"
+                android:hint="Entrez votre email"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                style="@style/LabelText"
+                android:text="Mot de passe" />
+
+            <EditText
+                style="@style/AppField"
+                android:hint="Entrez votre mot de passe"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:id="@id/forgotPasswordLink"
+                style="@style/LinkText"
+                android:layout_marginBottom="14dp"
+                android:text="Mot de passe oublié ?" />
+
+            <Button
+                android:id="@id/loginButton"
+                style="@style/AppButtonPrimary"
+                android:text="Se connecter" />
+
+            <TextView
+                android:id="@id/registerLink"
+                style="@style/MutedText"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:text="Pas de compte ? S'inscrire" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

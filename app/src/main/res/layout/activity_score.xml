@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/screenRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_surface"
+    android:orientation="vertical"
+    tools:context=".ScoreActivity">
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout style="@style/ScreenBody" android:gravity="center_horizontal">
+            <TextView android:id="@id/backButton" style="@style/LinkText" android:layout_gravity="start" android:text="‹ Retour" />
+            <TextView style="@style/AppTitle" android:layout_marginTop="18dp" android:text="Score de votre CV" />
+            <TextView android:layout_width="132dp" android:layout_height="132dp" android:layout_marginTop="28dp" android:background="@drawable/bg_score_circle" android:gravity="center" android:text="87&#10;/100" android:textColor="@color/app_success" android:textSize="26sp" android:textStyle="bold" />
+            <TextView style="@style/BodyText" android:layout_marginTop="18dp" android:gravity="center" android:text="Excellent ! Votre CV est très fort." android:textStyle="bold" />
+            <TextView style="@style/MutedText" android:layout_marginTop="8dp" android:gravity="center" android:text="Voici quelques suggestions pour l'améliorer encore." />
+            <TextView style="@style/CardRow" android:layout_marginTop="22dp" android:text="Contenu                                      90/100" android:textColor="@color/app_success" android:textStyle="bold" />
+            <TextView style="@style/CardRow" android:text="Présentation                                85/100" android:textColor="@color/app_success" android:textStyle="bold" />
+            <TextView style="@style/CardRow" android:text="Compétences                                 85/100" android:textColor="@color/app_success" android:textStyle="bold" />
+            <TextView style="@style/CardRow" android:text="Impact                                      90/100" android:textColor="@color/app_success" android:textStyle="bold" />
+            <Button android:id="@id/recommendationsButton" style="@style/AppButtonPrimary" android:text="Voir les recommandations" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

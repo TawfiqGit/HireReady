@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/screenRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_surface"
+    android:orientation="vertical"
+    tools:context=".ReferencesActivity">
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout style="@style/ScreenBody">
+            <TextView android:id="@id/backButton" style="@style/LinkText" android:text="‹ Retour" />
+            <TextView style="@style/AppTitle" android:layout_marginTop="16dp" android:text="Références" />
+            <TextView style="@style/AppSubtitle" android:text="Ajoutez vos références professionnelles." />
+
+            <TextView style="@style/CardRow" android:layout_marginTop="20dp" android:text="Sophie Martin&#10;DRH - Crompa Acta&#10;sophie.martin@acta.com&#10;06 12 34 56 78" android:textColor="@color/app_ink" android:textStyle="bold" />
+            <TextView style="@style/CardRow" android:text="Julien Bernard&#10;Directeur Général - NextGen&#10;julien.bernard@nextgen.com&#10;06 23 45 67 89" android:textColor="@color/app_ink" android:textStyle="bold" />
+
+            <TextView style="@style/LinkText" android:layout_gravity="center_horizontal" android:layout_marginTop="8dp" android:text="+ Ajouter une référence" />
+            <include layout="@layout/include_form_actions" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/screenRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_surface"
+    android:orientation="vertical"
+    tools:context=".SummaryActivity">
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout style="@style/ScreenBody">
+            <TextView android:id="@id/backButton" style="@style/LinkText" android:text="‹ Retour" />
+            <TextView style="@style/AppTitle" android:layout_marginTop="16dp" android:text="Résumé professionnel" />
+            <TextView style="@style/AppSubtitle" android:text="Présentez-vous en quelques lignes." />
+
+            <TextView style="@style/LabelText" android:layout_marginTop="20dp" android:text="Résumé professionnel *" />
+            <EditText
+                style="@style/AppField"
+                android:layout_height="150dp"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:singleLine="false"
+                android:text="Professionnelle des ressources humaines avec plus de 6 ans d'expérience dans le recrutement, la gestion des talents et le développement RH." />
+
+            <TextView style="@style/LabelText" android:text="Objectif professionnel" />
+            <EditText
+                style="@style/AppField"
+                android:layout_height="130dp"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:singleLine="false"
+                android:text="Évoluer vers un poste de Responsable RH senior pour accompagner la croissance et la transformation des organisations." />
+
+            <include layout="@layout/include_form_actions" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

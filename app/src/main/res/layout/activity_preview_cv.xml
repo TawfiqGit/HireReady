@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/screenRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_surface"
+    android:orientation="vertical"
+    tools:context=".PreviewCvActivity">
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout style="@style/ScreenBody">
+            <TextView android:id="@id/backButton" style="@style/LinkText" android:text="‹ Retour" />
+            <TextView style="@style/AppTitle" android:layout_marginTop="16dp" android:text="Aperçu de votre CV" />
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:gravity="center" android:orientation="horizontal">
+                <TextView style="@style/LinkText" android:layout_width="0dp" android:layout_weight="1" android:gravity="center" android:text="Aperçu" />
+                <TextView style="@style/MutedText" android:layout_width="0dp" android:layout_weight="1" android:gravity="center" android:text="PDF" android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:layout_marginBottom="18dp" android:background="@drawable/bg_card" android:orientation="vertical" android:padding="18dp">
+                <TextView style="@style/AppTitle" android:text="Camille Laurent" android:textSize="18sp" />
+                <TextView style="@style/AppSubtitle" android:text="Responsable des Ressources Humaines" />
+                <TextView style="@style/LinkText" android:layout_marginTop="8dp" android:text="Profil" />
+                <TextView style="@style/BodyText" android:text="Professionnelle RH avec une solide expérience en recrutement et développement des talents." />
+                <TextView style="@style/LinkText" android:layout_marginTop="14dp" android:text="Expériences" />
+                <TextView style="@style/BodyText" android:text="Responsable RH - Crompa Acta&#10;HR Business Partner - NextGen" />
+                <TextView style="@style/LinkText" android:layout_marginTop="14dp" android:text="Formation" />
+                <TextView style="@style/BodyText" android:text="Master en Ressources Humaines - Université Lyon 3" />
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <Button android:id="@id/editButton" style="@style/AppButtonSecondary" android:layout_width="0dp" android:layout_marginEnd="8dp" android:layout_weight="1" android:text="Modifier" />
+                <Button android:id="@id/downloadButton" style="@style/AppButtonPrimary" android:layout_width="0dp" android:layout_marginStart="8dp" android:layout_weight="1" android:text="Télécharger" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

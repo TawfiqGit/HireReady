@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/screenRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_surface"
+    android:orientation="vertical"
+    tools:context=".InterestsActivity">
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout style="@style/ScreenBody">
+            <TextView android:id="@id/backButton" style="@style/LinkText" android:text="‹ Retour" />
+            <TextView style="@style/AppTitle" android:layout_marginTop="16dp" android:text="Centres d'intérêt" />
+            <TextView style="@style/AppSubtitle" android:text="Parlez-nous de vos passions." />
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:orientation="horizontal">
+                <TextView style="@style/BodyText" android:layout_width="wrap_content" android:layout_height="44dp" android:layout_marginEnd="10dp" android:background="@drawable/bg_chip" android:gravity="center" android:paddingStart="16dp" android:paddingEnd="16dp" android:text="Lecture" android:textStyle="bold" />
+                <TextView style="@style/BodyText" android:layout_width="wrap_content" android:layout_height="44dp" android:layout_marginEnd="10dp" android:background="@drawable/bg_chip" android:gravity="center" android:paddingStart="16dp" android:paddingEnd="16dp" android:text="Voyage" android:textStyle="bold" />
+                <TextView style="@style/BodyText" android:layout_width="wrap_content" android:layout_height="44dp" android:background="@drawable/bg_chip" android:gravity="center" android:paddingStart="16dp" android:paddingEnd="16dp" android:text="Yoga" android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:orientation="horizontal">
+                <TextView style="@style/BodyText" android:layout_width="wrap_content" android:layout_height="44dp" android:layout_marginEnd="10dp" android:background="@drawable/bg_chip" android:gravity="center" android:paddingStart="16dp" android:paddingEnd="16dp" android:text="Course à pied" android:textStyle="bold" />
+                <TextView style="@style/BodyText" android:layout_width="wrap_content" android:layout_height="44dp" android:background="@drawable/bg_chip" android:gravity="center" android:paddingStart="16dp" android:paddingEnd="16dp" android:text="Photographie" android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView style="@style/LinkText" android:layout_gravity="center_horizontal" android:layout_marginTop="28dp" android:text="+ Ajouter un centre d'intérêt" />
+            <include layout="@layout/include_form_actions" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

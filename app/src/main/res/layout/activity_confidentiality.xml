@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/screenRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_surface"
+    android:orientation="vertical"
+    tools:context=".ConfidentialityActivity">
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout style="@style/ScreenBody">
+            <TextView android:id="@id/backButton" style="@style/LinkText" android:text="‹ Retour" />
+            <TextView style="@style/AppTitle" android:layout_marginTop="16dp" android:text="Confidentialité" />
+
+            <LinearLayout android:id="@id/privacyPolicyRow" style="@style/CardRow" android:layout_marginTop="22dp"><TextView style="@style/BodyText" android:layout_width="0dp" android:layout_weight="1" android:text="Politique de confidentialité" android:textStyle="bold" /><TextView style="@style/MutedText" android:text="›" /></LinearLayout>
+            <TextView style="@style/CardRow" android:text="Gestion des données        ›" android:textColor="@color/app_ink" android:textStyle="bold" />
+            <TextView style="@style/CardRow" android:text="Consentement des cookies        ›" android:textColor="@color/app_ink" android:textStyle="bold" />
+            <TextView style="@style/CardRow" android:text="Données personnelles        ›" android:textColor="@color/app_ink" android:textStyle="bold" />
+            <TextView style="@style/CardRow" android:text="Télécharger mes données        ›" android:textColor="@color/app_ink" android:textStyle="bold" />
+            <LinearLayout android:id="@id/deleteAccountRow" style="@style/CardRow"><TextView style="@style/BodyText" android:layout_width="0dp" android:layout_weight="1" android:text="Supprimer mes données" android:textColor="@color/app_danger" android:textStyle="bold" /><TextView style="@style/MutedText" android:text="›" /></LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

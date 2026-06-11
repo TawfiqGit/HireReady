@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:id="@id/myCvsRow"
+        style="@style/CardRow">
+        <TextView
+            style="@style/BodyText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Mes CV&#10;5 CV enregistrés"
+            android:textStyle="bold" />
+        <TextView style="@style/MutedText" android:text="›" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/importCvRow"
+        style="@style/CardRow">
+        <TextView
+            style="@style/BodyText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Importer un CV&#10;Importer et améliorer votre CV"
+            android:textStyle="bold" />
+        <TextView style="@style/MutedText" android:text="›" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/scoreRow"
+        style="@style/CardRow">
+        <TextView
+            style="@style/BodyText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Score CV&#10;Analysez et améliorez votre CV"
+            android:textStyle="bold" />
+        <TextView style="@style/MutedText" android:text="›" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/previewRow"
+        style="@style/CardRow">
+        <TextView
+            style="@style/BodyText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Modèles&#10;Découvrez nos modèles"
+            android:textStyle="bold" />
+        <TextView style="@style/MutedText" android:text="›" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/helpRow"
+        style="@style/CardRow">
+        <TextView
+            style="@style/BodyText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Lettre de motivation&#10;Créez des lettres personnalisées"
+            android:textStyle="bold" />
+        <TextView style="@style/MutedText" android:text="›" />
+    </LinearLayout>
+</merge>

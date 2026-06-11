@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/screenRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_surface"
+    android:orientation="vertical"
+    tools:context=".EducationActivity">
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout style="@style/ScreenBody">
+            <TextView android:id="@id/backButton" style="@style/LinkText" android:text="‹ Retour" />
+            <TextView style="@style/AppTitle" android:layout_marginTop="16dp" android:text="Formation" />
+            <TextView style="@style/AppSubtitle" android:text="Ajoutez vos diplômes et formations." />
+
+            <TextView style="@style/CardRow" android:layout_marginTop="20dp" android:text="Master en Ressources Humaines&#10;Université Lyon 3&#10;2014 - 2016" android:textColor="@color/app_ink" android:textStyle="bold" />
+            <TextView style="@style/CardRow" android:text="Licence Gestion des RH&#10;Université Lyon 3&#10;2011 - 2014" android:textColor="@color/app_ink" android:textStyle="bold" />
+            <TextView style="@style/CardRow" android:text="Baccalauréat ES&#10;Lycée Saint-Exupéry&#10;2011" android:textColor="@color/app_ink" android:textStyle="bold" />
+
+            <TextView style="@style/LinkText" android:layout_gravity="center_horizontal" android:layout_marginTop="8dp" android:text="+ Ajouter une formation" />
+            <include layout="@layout/include_form_actions" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
