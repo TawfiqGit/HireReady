@@ -6,4 +6,13 @@
     </style>
 
     <style name="Theme.HireReady" parent="Base.Theme.HireReady" />
+
+    <style name="Theme.HireReady.Splash" parent="Base.Theme.HireReady">
+        <item name="android:windowBackground">@color/splash_blue</item>
+        <item name="android:windowSplashScreenBackground">@color/splash_blue</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_cv_document</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:fontFamily">sans</item>
+    </style>
 </resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="96dp"
+    android:height="96dp"
+    android:viewportWidth="96"
+    android:viewportHeight="96">
+
+    <path
+        android:fillAlpha="0.18"
+        android:fillColor="@color/splash_icon_shadow"
+        android:pathData="M33,18H64C70.6,18 76,23.4 76,30V73C76,79.6 70.6,85 64,85H33C26.4,85 21,79.6 21,73V30C21,23.4 26.4,18 33,18z" />
+
+    <path
+        android:fillColor="@color/splash_icon"
+        android:pathData="M31,15H62L75,28V70C75,76.6 69.6,82 63,82H31C24.4,82 19,76.6 19,70V27C19,20.4 24.4,15 31,15z" />
+
+    <path
+        android:fillColor="@color/splash_icon_fold"
+        android:pathData="M62,15V25C62,27.8 64.2,30 67,30H75z" />
+
+    <path
+        android:strokeColor="@color/splash_blue"
+        android:strokeLineCap="round"
+        android:strokeWidth="4"
+        android:pathData="M35,41H59" />
+
+    <path
+        android:strokeColor="@color/splash_blue"
+        android:strokeLineCap="round"
+        android:strokeWidth="4"
+        android:pathData="M35,51H64" />
+
+    <path
+        android:strokeColor="@color/splash_blue"
+        android:strokeLineCap="round"
+        android:strokeWidth="4"
+        android:pathData="M35,61H53" />
+
+    <path
+        android:fillColor="@color/splash_blue_light"
+        android:pathData="M23,22L34,22L23,33z" />
+</vector>

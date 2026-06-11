@@ -13,7 +13,11 @@
         android:theme="@style/Theme.HireReady">
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.HireReady.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
